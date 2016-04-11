@@ -1,11 +1,16 @@
 #main {
-	width: 100%;
+	width: 700px;
 	height: 100%;
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	background-color: #363C4F;
+	padding-bottom: 100px;
+	padding-top: 30px;
+	border-radius: 40px;
+	margin: 2%;
 
 }
 
@@ -14,24 +19,27 @@
 	left: 10%;
 	top: 5%;
 	width: 400px;
-	height: 270px;
+	height: 170px;
 	font-family: arial;
 	font-size: 60px;
-	border-style: solid;
-	border-color: black;
-	background-color: gray;
+	/*border-style: solid;*/
+	/*border-color: #A2A6A9;*/
+	background-color: #71BDA7;
 	text-align: right;
-	padding-right: 4px; 
+	padding-right: 4px;
+	border-radius: 4px; 
 
 }
 
 #numberGrid {
 	right: 10%;
 	top: 10%;
-	width: 500px;
-	height: 370px;
+	width: 80%;
+	height: 360px;
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 15px;
+	background-color: #373A46;
 }
 
 #funcGrid {
@@ -51,32 +59,41 @@
 	border-radius: 5px;
 	font-size: 30px;
 	margin: 2%;
+	font-size: 30px;
+	margin: 10px;
+	background-color: #1D211F;
+	color: #A2A6A9;
+
 }
 
 .fBtn {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 30px;
+	margin: 10px;
+	background-color: #1D211F;
+	color: 	#A2A6A9;
 }
 
 .grid {
-	/*position: absolute;*/
-	/*position: relative;*/
 	display: flex;
 	flex-direction: column;
 	border-style: solid;
-	border-color: black;
+	border-color: #A2A6A9;
 	flex-wrap: wrap;
+	border-radius: 8px;
 }
 
-.button {
+/*.button {
 	border-radius: 5px;
 	font-size: 30px;
 	margin: 2%;
 	margin: 10px;
-}
+}*/
 
-#equals {
-	height: 160px;
-	background-color: red;
-	border-radius: 8px;
+#plusBtn {
+	height: 100px;
+	background-color: #904351;
+	color: #CCD0D3;
 }

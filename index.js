@@ -1,3 +1,5 @@
+//Task - add a decimal point
+
 var func1;
 var ans;
 
@@ -13,8 +15,17 @@ var maths = function() {
 	
 	switch (arg.func) {
 		case "plus":
-		return JSON.parse(arg.val1) + JSON.parse(arg.val2);
-		break;
+			return JSON.parse(arg.val1) + JSON.parse(arg.val2);
+			break;
+		case "minus":
+			return JSON.parse(arg.val1) - JSON.parse(arg.val2);
+			break;
+		case "multiply":
+			return JSON.parse(arg.val1) * JSON.parse(arg.val2);
+			break;
+		case "divide":
+			return JSON.parse(arg.val1) / JSON.parse(arg.val2);
+			break;
 	}
 }
 
@@ -55,6 +66,10 @@ var equals = function() {
 	arg.chain = 0;
 	// return;
 
+}
+
+var del = function() {
+	console.log("delete!")
 }
 
 //  bug - unable to chain and then tap equals
