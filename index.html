@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<body>
+			<div id="main">
+				<div id="numDisp">0</div>
+
+				<div id="numberGrid" class="grid">
+					<button class="nBtn" class="button" onclick="nPress(1)">1</button>
+					<button class="nBtn" class="button" onclick="nPress(2)">2</button>
+					<button class="nBtn" class="button" onclick="nPress(3)">3</button>
+					<button class="nBtn" class="button" onclick="nPress(4)">4</button>
+					<button class="nBtn" class="button" onclick="nPress(5)">5</button>
+					<button class="nBtn" class="button" onclick="nPress(6)">6</button>
+					<button class="nBtn" class="button" onclick="nPress(7)">7</button>
+					<button class="nBtn" class="button" onclick="nPress(8)">8</button>
+					<button class="nBtn" class="button" onclick="nPress(9)">9</button>
+					<button class="nBtn" class="button" onclick="nPress(0)">0</button>
+				</div>
+				<div id="funcGrid" class="grid">
+					<button class="button" class="fBtn" onclick="fPress('plus')">+</button>
+					<button class="button" class="fBtn" onclick="fPress('minus')">-</button>
+					<button class="button" class="fBtn" onclick="fPress('divide')">&divide;</button>
+					<button class="button" class="fBtn" onclick="fPress('multiply')">x</button>
+					
+				</div>
+				<div id="controlGrid" class="grid">
+					<button class="button" class="fBtn" onclick="fPress('reset')">c</button>
+					<button class="button" class="fBtn" onclick="fPress('delete')">del</button>
+					<button class="button" class="fBtn" id="equals" onclick="equals()">=</button>
+				</div>
+			</div>
+
+		</body>
+	</head>
+</html>
