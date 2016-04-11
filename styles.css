@@ -1,5 +1,5 @@
 #main {
-	width: 700px;
+	width: 60%;
 	height: 100%;
 	display: flex;
 	align-items: flex-end;
@@ -7,10 +7,10 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: #363C4F;
-	padding-bottom: 100px;
-	padding-top: 30px;
+	padding-bottom: 9%;
+	padding-top: 4%;
 	border-radius: 40px;
-	margin: 2%;
+	margin: 2% 20% 2% 20%;
 
 }
 
@@ -18,8 +18,8 @@
 	/*position: absolute;*/
 	left: 10%;
 	top: 5%;
-	width: 400px;
-	height: 170px;
+	width: 60%;
+	height: 172px;
 	font-family: arial;
 	font-size: 60px;
 	/*border-style: solid;*/
@@ -31,20 +31,35 @@
 
 }
 
-#numberGrid {
+#allKeyGrid {
 	right: 10%;
 	top: 10%;
-	width: 80%;
-	height: 360px;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 15px;
+	/*width: 360px;*/
+	width: 480px;
+	height: 480px;
 	background-color: #373A46;
+	border-style: solid;
+	border-color: #A2A6A9;
+	/*background-color: red;*/
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+#numberGrid {
+	height: 480px;
+	width: 360px;
+	/*background-color: green;*/
+	display: flex;
+	/*flex-direction: column-reverse;*/
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
 }
 
 #funcGrid {
-	right: 10%;
-	top: 65%;
+	height: 600px;
+	/*right: 10%;*/
+	/*top: 65%;*/
 	display: flex;
 	flex-direction: column;
 }
@@ -56,7 +71,7 @@
 .nBtn {
 	width: 100px;
 	height: 100px;
-	border-radius: 5px;
+	border-radius: 33px;
 	font-size: 30px;
 	margin: 2%;
 	font-size: 30px;
@@ -67,11 +82,11 @@
 }
 
 .fBtn {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 5px;
 	font-size: 30px;
-	margin: 10px;
+	margin: 10px 2px 2px 10px;
 	background-color: #1D211F;
 	color: 	#A2A6A9;
 }
@@ -79,8 +94,6 @@
 .grid {
 	display: flex;
 	flex-direction: column;
-	border-style: solid;
-	border-color: #A2A6A9;
 	flex-wrap: wrap;
 	border-radius: 8px;
 }

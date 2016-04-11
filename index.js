@@ -12,7 +12,7 @@ var arg = {
 }
 
 var maths = function() {
-	
+	console.log("maths()___");
 	switch (arg.func) {
 		case "plus":
 			return JSON.parse(arg.val1) + JSON.parse(arg.val2);
@@ -30,6 +30,7 @@ var maths = function() {
 }
 
 var fPress = function(fnc) {
+	console.log("fpress()___")
 	if (arg.chain === 1) {
 		equals();
 	}
@@ -44,6 +45,7 @@ var fPress = function(fnc) {
 }
 
 var nPress = function(num) {
+	console.log("nPress()___")
 		numStr = JSON.stringify(num);
 		arg.val2 += numStr;
 		// arg["val" + arg.state] += numStr;
@@ -69,7 +71,15 @@ var equals = function() {
 }
 
 var del = function() {
-	console.log("delete!")
+	
+	if (arg.val2) {
+		console.log("delete!")
+		arg.val2 = arg.val2.slice(0,-1)
+		// var foo = JSON.stringify(arg.val2);
+		// foo = foo.slice(1, -2);
+		// foo.pop();
+		document.getElementById("numDisp").innerHTML = arg.val2;
+	}
 }
 
 //  bug - unable to chain and then tap equals

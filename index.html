@@ -7,34 +7,36 @@
 			<div id="main">
 				<div id="numDisp">0</div>
 
-				<div id="numberGrid" class="grid">
-					<button class="nBtn" onclick="nPress(1)">1</button>
-					<button class="nBtn" onclick="nPress(2)">2</button>
-					<button class="nBtn" onclick="nPress(3)">3</button>
-					<button class="nBtn" onclick="nPress(4)">4</button>
-					<button class="nBtn" onclick="nPress(5)">5</button>
-					<button class="nBtn" onclick="nPress(6)">6</button>
-					<button class="nBtn" onclick="nPress(7)">7</button>
-					<button class="nBtn" onclick="nPress(8)">8</button>
-					<button class="nBtn" onclick="nPress(9)">9</button>
-					<button class="nBtn" onclick="nPress(0)">0</button>
+				<button class="fBtn" onclick="location.reload()">c</button>
+				<button class="fBtn" style="font-size:18px;" onclick="del()">del</button>
 
-					<button class="fBtn" id="plusBtn" onclick="fPress('plus')">+</button>
-					<button class="fBtn" onclick="fPress('minus')">-</button>
-					<button class="fBtn" onclick="fPress('divide')">&divide;</button>
-					<button class="fBtn" onclick="fPress('multiply')">x</button>
+				<div id="allKeyGrid" class="grid">					
+					<div id="numberGrid">
+						<button class="nBtn" onclick="equals()">=</button>
+						<button class="nBtn" onclick="nPress(.)">.</button>
+						<button class="nBtn" onclick="nPress(0)">0</button>
+						<button class="nBtn" onclick="nPress(1)">1</button>
+						<button class="nBtn" onclick="nPress(2)">2</button>
+						<button class="nBtn" onclick="nPress(3)">3</button>
+						<button class="nBtn" onclick="nPress(4)">4</button>
+						<button class="nBtn" onclick="nPress(5)">5</button>
+						<button class="nBtn" onclick="nPress(6)">6</button>
+						<button class="nBtn" onclick="nPress(7)">7</button>
+						<button class="nBtn" onclick="nPress(8)">8</button>
+						<button class="nBtn" onclick="nPress(9)">9</button>
+					</div>
 
-					<button class="fBtn" onclick="location.reload()">c</button>
-					<button class="fBtn" onclick="del()">del</button>
-					<button class="fBtn" onclick="equals()">=</button>
+					<div id="funcGrid" class="grid">
+						
+						<button class="nBtn" onclick="fPress('divide')">&divide;</button>
+						<button class="nBtn" onclick="fPress('multiply')">x</button>
+						<button class="nBtn" onclick="fPress('minus')">-</button>
+						<button class="nBtn" id="plusBtn" onclick="fPress('plus')">+</button>
+						
+						
+					</div>
+
 				</div>
-				<!-- <div id="funcGrid" class="grid">
-					
-					
-				</div> -->
-				<!-- <div id="controlGrid" class="grid">
-					
-				</div> -->
 			</div>
 
 		</body>
