@@ -83,3 +83,79 @@ var del = function() {
 }
 
 //  bug - unable to chain and then tap equals
+
+var n = 0;
+var hh;
+var ww;
+var contScal;
+var featCont = document.getElementsByClassName("featCont");
+
+var id11;
+var showFeatures = function() {
+	interval1 = setInterval(feat, 20);
+	console.log("click");
+	document.getElementById("feat1").style.height = "0px";
+	document.getElementById("feat1").style.width = "0px";
+	document.getElementById("feat1").style.display = "block";
+}
+
+
+
+var feat = function() {
+	hh = document.getElementById("feat1").style.height;
+	ww = document.getElementById("feat1").style.width;
+	ll = document.getElementById("feat1").left;
+	
+
+	if (document.getElementById("feat1").style.height >= "80%" || document.getElementById("feat1").style.width >= "70%") {
+		clearInterval(interval1);
+		
+	} else {
+		document.getElementById("feat1").style.height = parseInt(hh) + 5 + "%";
+		document.getElementById("feat1").style.width = parseInt(ww) + 5 + "%";
+		
+		n++;
+	}
+	if (document.getElementById("feat1").style.height >= "30%" || document.getElementById("feat1").style.width >= "30%") {
+		for (n=0; n < featCont.length; n++) {
+			featCont[n].style.display = "block";
+			// console.log("op = " + featCont[n].style.display);
+		}
+	}
+}
+
+var hideFeat = function() {
+	interval2 = setInterval(hideFeat2, 5);
+	console.log("close clicked");
+	console.log("close___");
+
+}
+
+var hideFeat2 = function() {
+	hh = document.getElementById("feat1").style.height;
+	ww = document.getElementById("feat1").style.width;
+
+
+	if (document.getElementById("feat1").style.height <= "0%" || document.getElementById("feat1").style.width <= "0%") {
+	document.getElementById("feat1").style.display = "none";
+	clearInterval(interval2);
+	// console.log("interval2 cleared");
+		
+	} else {
+		document.getElementById("feat1").style.height = parseInt(hh) - 2 + "%";
+		document.getElementById("feat1").style.width = parseInt(ww) - 2 + "%";
+
+		n++;
+		// console.log("else");
+	}
+		//hides feat content when page gets too small
+	if (document.getElementById("feat1").style.height <= "30%" || document.getElementById("feat1").style.width <= "30%") {
+		for (n=0; n < featCont.length; n++) {
+			featCont[n].style.display = "none";
+			// console.log("op = " + featCont[n].style.display);
+		}
+	}
+
+	
+	
+}

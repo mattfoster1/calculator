@@ -39,6 +39,27 @@
 				</div>
 			</div>
 
+			<div id="features" onclick="showFeatures()">Intended Features</div>
+		
+		<div id="feat1">
+
+			<div id="featTitle" class="featCont"> Intended Features: </div>
+			<div id="featLs" class="featCont">
+				<ul>
+					<li class="strikethrough">Simple sums possible.</li><br>
+					<li class="strikethrough">Multiple calculations can be carried out without resetting page.</li><br>
+					<li class="strikethrough">Ability to stack calculations, see answer without tapping '='.</li><br>
+					<li>Ability to do complex sums (currently bugging out when sums stacked)</li><br>
+					<li>Ability to do sums using floats or doubles (decimal point currently has no function attached)</li><br>
+					<li>Sums with multiple stages (e.g. 2+2x5) should be carried out in the correct order. Currently works left to right.<br><br>
+						<ul><li style="font-size:10px; color:gray;">Will need to alter multiply and divide functionality to not show current sum until '=' is pressed. Otherwise shows calculation carried out out of order.</li></ul>
+					</li><br>
+				</ul>
+			</div>
+			<img id="closeFeat" class="featCont" src="images/cross.png" onclick="hideFeat()"></img>
+			<div id="featBackground"></div>
+		</div>
+
 		</body>
 	</head>
 </html>
